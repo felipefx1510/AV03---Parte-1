@@ -8,8 +8,6 @@ def voltando_menu():
 
 def menu(inserir_dados, listar_carros, buscar_carros):
     while True:
-        print('Olá, seja bem-vindo a Volvo!')
-        print('O que você quer fazer hoje?\n1. Inserir novos carros\n2. Listar carros\n3. Buscar carros\n4. Sair')
         opcao = int(input(''))
 
         if opcao == 1:

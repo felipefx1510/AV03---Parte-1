@@ -1,2 +1,2 @@
-from .manipular_tabela import *
+from .tabela import *
 from .menu import *
