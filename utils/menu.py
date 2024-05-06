@@ -36,6 +36,7 @@ def menu(inserir_dados, listar_carros, buscar_carros):
         elif opcao == 2:
             listar_carros()
             sleep(2)
+            break
         
         elif opcao == 3:
             while True:
