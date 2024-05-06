@@ -7,6 +7,10 @@ def voltando_menu():
     system('cls')
 
 def menu(inserir_dados, listar_carros, buscar_carros):
+    print('-'*30)
+    print('Menu'.center(30))
+    print('-'*30)
+    print('O que você quer fazer hoje?\n1. Inserir novos carros\n2. Listar carros\n3. Buscar carros\n4. Sair')
     while True:
         opcao = int(input(''))
 
