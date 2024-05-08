@@ -36,7 +36,7 @@ def menu(inserir_dados, listar_carros, buscar_carros):
         elif opcao == 2:
             listar_carros()
             sleep(2)
-            break
+            return menu(inserir_dados, listar_carros, buscar_carros)
         
         elif opcao == 3:
             while True:
@@ -57,7 +57,6 @@ def menu(inserir_dados, listar_carros, buscar_carros):
             print('Saindo...')
             sleep(2)
             system('cls')
-            break
             
         else:
             print('Opção incorreta!')
