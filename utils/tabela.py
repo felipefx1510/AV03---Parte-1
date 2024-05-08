@@ -30,7 +30,7 @@ def listar_carros():
     for lista in carros:
         print(f'ID: {lista[0]}, Tipo: {lista[1]}, Ano: {lista[2]}, Portas: {lista[3]}, Potência: {lista[4]} cavalos')
         
-def buscar_carros(tipo):
-    carros = cursor.execute("SELECT * FROM carros WHERE tipo=?", (tipo,)).fetchall()
+def buscar_carros(id):
+    carros = cursor.execute("SELECT * FROM carros WHERE id=?", (id)).fetchall()
     for busca in carros:
         print(f'ID: {busca[0]}, Tipo: {busca[1]}, Ano: {busca[2]}, Portas: {busca[3]}, Potência: {busca[4]} cavalos')

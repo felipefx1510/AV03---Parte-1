@@ -40,8 +40,8 @@ def menu(inserir_dados, listar_carros, buscar_carros):
         
         elif opcao == 3:
             while True:
-                tipo = str(input('Digite o tipo de carro para a consulta: ')).upper()
-                buscar_carros(tipo)
+                id = str(input('Digite o ID do carro para a consulta: ')).upper()
+                buscar_carros(id)
                 while True:
                     opcao = int(input('Deseja realizar outra consulta?\n1. Sim\n2. Não\n'))
                     if opcao == 1:
