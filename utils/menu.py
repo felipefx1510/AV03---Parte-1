@@ -54,11 +54,15 @@ def menu(inserir_dados, listar_carros, buscar_carros):
                         sleep(1)
                 
         elif opcao == 4:
+            system('cls')
             print('Saindo...')
             sleep(2)
             system('cls')
+            break
             
         else:
+            system('cls')
             print('Opção incorreta!')
             sleep(1)
             system('cls')
+            return menu(inserir_dados, listar_carros, buscar_carros)
